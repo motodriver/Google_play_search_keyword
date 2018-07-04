@@ -67,7 +67,7 @@ A词下有X个联想词，B词下有Y个联想词(X>Y)
 |wallpaper | 366|
 
 将这些词人工分类，即可得到该词下的需求情况
-![image](https://github.com/motodriver/Google_play_search_keyword/blob/master/Launcher%20%E8%81%94%E6%83%B3%E8%AF%8D%E5%88%86%E6%9E%90.pdf)
+![image](https://github.com/motodriver/Google_play_search_keyword/blob/master/Launcher%20联想词分析-001.jpg)
 
 
 
