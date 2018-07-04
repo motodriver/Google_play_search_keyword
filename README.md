@@ -57,7 +57,7 @@ https://market.android.com/suggest/SuggRequest?json=1&c=3
 
 ### 1.4 联想词是怎么来的
 初步分析，联想词是由用户搜索产生、开发者上传的信息产生的，原因有如下几点
-1. 在联想词中会出现大量weether\colock这种明显是输入错误的词 ———— 用户搜索产生
+1. 在联想词中会出现大量weether\colock\wedget这种明显是输入错误的词 ———— 用户搜索产生
 2. 有Xperia™这种词出现 ———— 开发者上传产生
 
 ### 1.5 联想词有什么意义
