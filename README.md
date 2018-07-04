@@ -37,12 +37,14 @@ https://market.android.com/suggest/SuggRequest?json=1&c=3&query=#根词#&hl=#语
 ### 1.4 联想词是怎么来的
 初步分析，联想词是由用户搜索产生、开发者上传的信息产生的，原因有如下几点
 1. 在联想词中会出现大量weether\colock\wedget这种明显是输入错误的词 ———— 用户搜索产生
-2. 有Xperia™这种词出现 ———— 开发者上传产生
+2. 有Xperia™\Android ™这种词出现 ———— 开发者上传产生
 
 ### 1.5 联想词有什么意义
 #### 1.5.1 判断需求大小
 示例：
+
 A词下有X个联想词，B词下有Y个联想词(X>Y)
+
 那么A大概率是比B更强的需求，有更大的市场
 
 #### 1.5.2 判断需求内容
@@ -66,7 +68,7 @@ A词下有X个联想词，B词下有Y个联想词(X>Y)
 |cm | 367|
 |wallpaper | 366|
 
-将这些词人工分类，即可得到该词下的需求情况
+将这些词人工分类，即可得到该词下的需求情况（词后的数字是出现的次数）
 ![image](https://github.com/motodriver/Google_play_search_keyword/blob/master/Launcher%20联想词分析-001.jpg)
 
 
