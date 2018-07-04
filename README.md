@@ -10,41 +10,20 @@
 3. 按着这种方法多次迭代，即可抓取全部联想词
 
 #### 1.2.1 抓取细节
-##### 1.2.1.1 联想词生成方式
-在搜索框中输入根词后，会生成对应的url，以get的方式获取联想词
+#### 1.2.1.1 联想词生成方式
+在搜索框中输入根词后，会动态生成对应的url，以get的方式获取包含联想词的一条json
 
-##### 1.2.1.2 抓取方式
-根据根词、联想词，动态产生url，并抓取
+例：
+[{"s":"launcher","t":"q"},{"s":"launcher google","t":"q"},{"s":"Launcher\u003c3","t":"q"},{"s":"launcher ios","t":"q"},{"s":"Launcher for Android ™","t":"q"}]
 
-##### 1.2.1.3 url构成
+#### 1.2.1.2 url构成
 完整url示例↓
 
-https://market.android.com/suggest/SuggRequest?json=1&c=3&query=#keyword#&hl=#language#&gl=#country#&callback=#callback#
+https://market.android.com/suggest/SuggRequest?json=1&c=3&query=#根词#&hl=#语言#&gl=#国家#&callback=#回执k#
 
-组成部分：
-
-1.前缀
-
-https://market.android.com/suggest/SuggRequest?json=1&c=3
-
-2.请求的根词（#号中间放根词）
-
-&query=#keyword#
-
-3.语言
-
-&hl=#language#
-
-4.国家
-
-&gl=#country#
-
-5.回执
+注：
 
 随机或为空即可获得有效url，但是callback字段消失则是无效url
-
-&callback=#callback#
-
 
 ### 1.3 联想词有多少
 | 根词 | 联想词数量 |
@@ -70,10 +49,24 @@ A词下有X个联想词，B词下有Y个联想词(X>Y)
 分析联想词中出现较多的词，即可知道在该需求下细分需求的强弱
 
 ### 1.6 联想词有什么用
-#### 1.选题
-例：将Launcher下的20136个联想词做词频分析
+#### 1.6.1 选题
+例：将Launcher下的20136个联想词做词频分析,得到高频词
 
+| 联想词（部分） | 出现次数 |
+| ------------- | ------------- |
+| launcher | 9270 |
+| theme | 8044 |
+|go | 1102|
+|new | 735|
+|Keyboard | 678|
+|samsung | 674|
+|iphone | 664|
+|galaxy | 371|
+|2018 | 369|
+|cm | 367|
+|wallpaper | 366|
 
+将这些词人工分类，即可得到该词下的需求情况
 
 
 
